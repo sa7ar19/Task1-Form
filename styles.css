@@ -80,7 +80,7 @@ border: 1px solid #0C0;
 }
 
 
-.feedback1 , .feedback2 {
+.feedback1 , .feedback2, .feedback3, .feedback4 {
     display: none;
     background-color: rgba(255, 0, 0, 0.377);
     width: auto;

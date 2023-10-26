@@ -13,7 +13,9 @@
             <div class="form-heading">Provide your information</div>
             <form name="myForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
                 <label><span>Full name in Arabic <span class="required">*</span></span><input type="text" required class="input-field arabic-name" name="arabname" value="" /></label>
+                <h5 class="feedback1">Arabic only!!</h5>
                 <label><span>Full name in English <span class="required">*</span></span><input type="text" required  class="input-field" name="engname" value="" /></label>
+                <h5 class="feedback2">English only!!</h5>
                 <label><span>Email <span class="required">*</span></span><input type="email" class="input-field email-field"  required name="field3" value="" /></label>
                 <label><span>Phone number <span class="required">*</span></span><input type="text" class="input-field"  required name="tel_no" pattern="[01].*" minlength="11" maxlength="11"/></label>
                 <label><span>National ID <span class="required">*</span></span><input type="text" class="input-field"  required name="textNID" minlength="14" maxlength="14"  /></label>
@@ -26,9 +28,9 @@
                         <option value="Alexandria">Alexandria</option>
                     </select>
                 </label>
-                <h5 class="feedback1">Please Select Your University!!</h5>
+                <h5 class="feedback3">Please Select Your University!!</h5>
                 <label><span>Academic year <span class="required">*</span></span><input type="text"  required class="year-number-field" name="academicYear" value="" minlength="1" maxlength="1" /></label>
-                <h5 class="feedback2">Please Enter a Valid Academic Year!</h5>
+                <h5 class="feedback4">Please Enter a Valid Academic Year!</h5>
                 <div class="radio-wrapper">
                     <p class="radio-label">GENDER <span class="required">*</span></p>
                     <div class="radio-container">

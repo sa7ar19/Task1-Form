@@ -1,10 +1,30 @@
 function validateForm(){
-    let selectVal = document.myForm.selectField.value;
-    let academicYear = document.myForm.academicYear.value;
-    const academicFeedback = document.querySelector(".feedback2");
-    const selectFeedback = document.querySelector(".feedback1");
+    const arabName = document.myForm.arabname.value;
+    const arabicFeedback = document.querySelector(".feedback1");
+    const englishName = document.myForm.engname.value;
+    const englishFeedback = document.querySelector(".feedback2");
+    const selectVal = document.myForm.selectField.value;
+    const academicYear = document.myForm.academicYear.value;
+    const selectFeedback = document.querySelector(".feedback3");
+    const academicFeedback = document.querySelector(".feedback4");
 
-
+    // Arabic Name Validation
+    
+    let isArabic = /[\u0600-\u06FF\u0750-\u077F]/;
+    if (!isArabic.test(arabName)){
+        arabicFeedback.classList.add("show")
+        setTimeout(function(){
+            arabicFeedback.classList.remove("show")
+        }, 3000)
+    }
+    
+    // English Name Validation
+    if (isArabic.test(englishName)){
+        englishFeedback.classList.add("show")
+        setTimeout(function(){
+            englishFeedback.classList.remove("show")
+        }, 3000)
+    }
     // select value validation
     if(selectVal === 'Question'){
         selectFeedback.classList.add("show")
