@@ -10,7 +10,7 @@ function validateForm(){
 
     // Arabic Name Validation
     
-    let isArabic = /[\u0600-\u06FF\u0750-\u077F]/;
+    let isArabic = /^[ء-ي ]+$/;
     if (!isArabic.test(arabName)){
         arabicFeedback.classList.add("show")
         setTimeout(function(){
@@ -19,6 +19,7 @@ function validateForm(){
     }
     
     // English Name Validation
+    let isEnglish = /^[A-Za-z]+$/;
     if (isArabic.test(englishName)){
         englishFeedback.classList.add("show")
         setTimeout(function(){
